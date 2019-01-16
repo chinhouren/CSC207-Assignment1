@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ScoreTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="90dp"
+        android:text="@string/highscore"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+    <TextView
+        android:id="@+id/ThirdScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/FirstScore"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="343dp"
+        android:text="@string/thirdscore"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1" />
+
+    <TextView
+        android:id="@+id/FirstScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/firstscore"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1" />
+
+    <TextView
+        android:id="@+id/SecondScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/FirstScore"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="260dp"
+        android:text="@string/secondscore"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView6"
+        android:layout_alignStart="@+id/ScoreTitle"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/first"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView7"
+        android:layout_alignStart="@+id/ScoreTitle"
+        android:layout_alignTop="@+id/SecondScore"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/second"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignTop="@+id/ThirdScore"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/third"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1" />
+
+    <TextView
+        android:id="@+id/WinningScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ScoreTitle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="191dp"
+        android:text="@string/yourscore"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1" />
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/FirstScore"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/back" />
+
+</RelativeLayout>

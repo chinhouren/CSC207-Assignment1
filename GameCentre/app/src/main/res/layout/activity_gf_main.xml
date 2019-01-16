@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fall2018.csc2017.gamecentre.GestureDetectGridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="500dp" />
+
+    <Button
+        android:id="@+id/SaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grid"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="45dp"
+        android:layout_toStartOf="@+id/ReturnButton"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/ReturnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="@string/quit" />
+
+    <Button
+        android:id="@+id/UndoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/SaveButton"
+        android:layout_marginStart="45dp"
+        android:layout_toEndOf="@+id/ReturnButton"
+        android:text="@string/undo" />
+
+    <TextView
+        android:id="@+id/Current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grid"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="45dp"
+        android:text="@string/now"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <TextView
+        android:id="@+id/Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="@string/next"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <ImageView
+        android:id="@+id/CurrentTetromino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Current"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="80dp"
+        />
+
+    <ImageView
+        android:id="@+id/NextTetromino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Next"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        />
+
+    <ImageView
+        android:id="@+id/NextTetromino2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Next"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="335dp"
+        android:layout_marginBottom="80dp"
+        />
+</RelativeLayout>
